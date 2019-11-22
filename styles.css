@@ -42,6 +42,8 @@ main {
   background-color: #1CA3BA;
   border-radius: 200px;
   margin-top: 8px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .accountsContainer {
@@ -58,24 +60,32 @@ main {
   background-color: white;
   border-radius: 3px;
   margin-bottom: 10px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .account2 {
   background-color: white;
   border-radius: 3px;
   margin-bottom: 10px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .account3 {
   background-color: white;
   border-radius: 3px;
   margin-bottom: 10px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .account4 {
   background-color: white;
   border-radius: 3px;
   margin-bottom: 0px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .accountType {
@@ -148,6 +158,8 @@ main {
   width: 160px;
   height: 90px;
   border-radius: 3px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .expenseBox {
@@ -158,6 +170,8 @@ main {
   margin-left: 80px;
   background-color: white;
   border-radius: 3px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .creditScoreBox {
@@ -168,6 +182,8 @@ main {
   height: 90px;
   right: 0;
   border-radius: 3px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 
 }
 
@@ -177,6 +193,8 @@ main {
   position: relative;
   height: 100px;
   margin-bottom: 20px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .welcomeText {
@@ -210,6 +228,8 @@ nav {
   height: 100%;
   width: 80px;
   background-color: white;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .mainIcon {
@@ -244,6 +264,8 @@ nav {
   background-color: white;
   margin-left: 60px;
   padding: 25px;
+  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+
 }
 
 .outflow {
