@@ -1,0 +1,175 @@
+* {
+margin: 0;
+padding: 0;
+font-family: "Biryani"
+}
+
+body {
+  background-color: #F5F5F5
+}
+
+main {
+  position: relative;
+  left: 80px;
+  background-color: blue;
+  height: 700px;
+}
+
+.overview {
+  background-color: yellow;
+  position: relative;
+  display: inline-block;
+  width: 45%;
+  margin-left: 40px;
+}
+
+.accountsBanner {
+  display: inline-block;
+  width: 100%;
+}
+
+.accountsTitle {
+  display: inline-block;
+}
+
+.titleButton {
+  display: inline-block;
+  font-size: 70%;
+  color: white;
+  right: 0;
+  position: absolute;
+  padding: 6px 20px 5px 20px;
+  background-color: #1CA3BA;
+  border-radius: 200px;
+  margin-top: 8px;
+}
+
+.accountsContainer {
+  position: absolute;
+  display: inline-block;
+  background-color: purple;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.atAGlance {
+  background-color: lightblue;
+  position: relative;
+}
+
+.incomeBox {
+  display: inline-block;
+  background-color: orange;
+  width: 140px;
+  height: 80px;
+}
+
+.incomeText {
+  font-size: 50%;
+}
+
+.expenseBox {
+  display: inline-block;
+  position: absolute;
+  width: 140px;
+  height: 80px;
+  margin-left: 60px;
+  background-color: pink;
+}
+
+.creditScoreBox {
+  display: inline-block;
+  position: absolute;
+  background-color: red;
+  width: 140px;
+  height: 80px;
+  right: 0;
+}
+
+.banner {
+  border-radius: 5px;
+  background: linear-gradient(to right, #8ED1DC, #E3F4F6);
+  position: relative;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+.welcomeText {
+  position: absolute;
+  top: 5px;
+  margin: 30px;
+  font-size: 110%;
+}
+
+.closeIcon {
+  width: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.creditIcon {
+  width: 40px;
+}
+
+.savingsIcon {
+  width: 40px;
+}
+.checkingIcon {
+  width: 40px;
+}
+
+nav {
+  position: fixed;
+  height: 100%;
+  width: 80px;
+  background-color: white;
+}
+
+.mainIcon {
+  width: 80px;
+  margin-top: 20px;
+}
+
+.navButtons {
+  position: relative;
+  margin-top: 200px;
+}
+
+.profileIcon {
+  display: block;
+  padding: 10px 20px;
+}
+
+.dashIcon {
+  display: block;
+  padding: 10px 20px;
+}
+
+.transIcon {
+  display: block;
+  padding: 10px 20px;
+}
+
+.transactions {
+  width: 38%;
+  display: inline-block;
+  position: absolute;
+  background-color: red;
+  margin-left: 80px;
+}
+
+h1 {
+  margin: 0px;
+  padding: 40px;
+  padding-bottom: 30px;
+}
+
+.accountName {
+  display: inline;
+}
+
+.accountType {
+  display: inline;
+}
