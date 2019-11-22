@@ -1,7 +1,8 @@
 * {
 margin: 0;
 padding: 0;
-font-family: "Biryani"
+font-family: "Biryani";
+color: #363636;
 }
 
 body {
@@ -11,12 +12,10 @@ body {
 main {
   position: relative;
   left: 80px;
-  background-color: blue;
   height: 700px;
 }
 
 .overview {
-  background-color: yellow;
   position: relative;
   display: inline-block;
   width: 45%;
@@ -30,6 +29,7 @@ main {
 
 .accountsTitle {
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 .titleButton {
@@ -47,51 +47,136 @@ main {
 .accountsContainer {
   position: absolute;
   display: inline-block;
-  background-color: purple;
-  margin-top: 40px;
+  margin-top: 30px;
   width: 100%;
 }
 
+.accounts {
+}
+
+.account1 {
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.account2 {
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.account3 {
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.account4 {
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 0px;
+}
+
+.accountType {
+  left: 390px;
+  position: absolute;
+  padding: 15px;
+}
+
+.accountName {
+  left: 120px;
+  position: absolute;
+  padding: 15px;
+}
+
+.creditIcon {
+  padding: 10px;
+  margin-bottom: -10px;
+}
+
+.savingsIcon {
+  padding: 10px;
+  margin-bottom: -10px;
+}
+
+.checkingIcon {
+  padding: 10px;
+  margin-bottom: -10px;
+}
+
 .atAGlance {
-  background-color: lightblue;
   position: relative;
+}
+
+.incomeText {
+  font-size: 60%;
+  margin-left: 10px;
+}
+
+.incomeNum {
+  display: block;
+  margin-left: 10px;
+  margin-top: 8px;
+}
+.expenseText {
+  font-size: 60%;
+  margin-left: 10px;
+}
+
+.expenseNum {
+  display: block;
+  margin-left: 10px;
+  margin-top: 8px;
+
+}
+.creditScoreText {
+  font-size: 60%;
+  margin-left: 10px;
+}
+
+.creditScoreNum {
+  display: block;
+  margin-left: 10px;
+  margin-top: 8px;
+
 }
 
 .incomeBox {
   display: inline-block;
-  background-color: orange;
-  width: 140px;
-  height: 80px;
-}
-
-.incomeText {
-  font-size: 50%;
+  background-color: white;
+  width: 160px;
+  height: 90px;
+  border-radius: 3px;
 }
 
 .expenseBox {
   display: inline-block;
   position: absolute;
-  width: 140px;
-  height: 80px;
-  margin-left: 60px;
-  background-color: pink;
+  width: 160px;
+  height: 90px;
+  margin-left: 80px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 .creditScoreBox {
   display: inline-block;
   position: absolute;
-  background-color: red;
-  width: 140px;
-  height: 80px;
+  background-color: white;
+  width: 160px;
+  height: 90px;
   right: 0;
+  border-radius: 3px;
+
 }
 
 .banner {
-  border-radius: 5px;
+  border-radius: 3px;
   background: linear-gradient(to right, #8ED1DC, #E3F4F6);
   position: relative;
   height: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .welcomeText {
@@ -153,11 +238,52 @@ nav {
 }
 
 .transactions {
-  width: 38%;
+  width: 32%;
   display: inline-block;
   position: absolute;
-  background-color: red;
-  margin-left: 80px;
+  background-color: white;
+  margin-left: 60px;
+  padding: 25px;
+}
+
+.outflow {
+  left: 360px;
+  position: absolute;
+}
+.outflowTitle {
+  left: 350px;
+  position: absolute;
+}
+
+hr {
+  margin: 5px 0px 5px 0px;
+}
+
+.inflow {
+  left: 280px;
+  position: absolute;
+}
+.inflowTitle {
+  left: 280px;
+  position: absolute;
+}
+
+.payee {
+  position: absolute;
+  left: 140px;
+}
+.payeeTitle {
+  position: absolute;
+  left: 140px;
+}
+
+.transTitleCtrl {
+  font-size: 130%;
+}
+
+.transButton {
+  top: 15px;
+  right: 20px;
 }
 
 h1 {
