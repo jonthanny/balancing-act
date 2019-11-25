@@ -6,19 +6,20 @@ color: #363636;
 }
 
 body {
-  background-color: #F5F5F5
+  background-color: #F5F5F5;
 }
 
-main {
+.overviewPage {
   position: relative;
   left: 80px;
   height: 700px;
+  width: 1360px;
 }
 
 .overview {
   position: relative;
   display: inline-block;
-  width: 45%;
+  width: 49%;
   margin-left: 40px;
 }
 
@@ -53,37 +54,13 @@ main {
   width: 100%;
 }
 
-.accounts {
-}
-
-.account1 {
-  background-color: white;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
-
-}
-
-.account2 {
-  background-color: white;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
-
-}
-
-.account3 {
-  background-color: white;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
-
-}
-
+.account1,
+.account2,
+.account3,
 .account4 {
   background-color: white;
   border-radius: 3px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
 
 }
@@ -100,16 +77,8 @@ main {
   padding: 15px;
 }
 
-.creditIcon {
-  padding: 10px;
-  margin-bottom: -10px;
-}
-
-.savingsIcon {
-  padding: 10px;
-  margin-bottom: -10px;
-}
-
+.creditIcon,
+.savingsIcon,
 .checkingIcon {
   padding: 10px;
   margin-bottom: -10px;
@@ -119,72 +88,49 @@ main {
   position: relative;
 }
 
-.incomeText {
-  font-size: 60%;
-  margin-left: 10px;
-}
-
-.incomeNum {
-  display: block;
-  margin-left: 10px;
-  margin-top: 8px;
-}
-.expenseText {
-  font-size: 60%;
-  margin-left: 10px;
-}
-
-.expenseNum {
-  display: block;
-  margin-left: 10px;
-  margin-top: 8px;
-
-}
+.incomeText,
+.expenseText,
 .creditScoreText {
-  font-size: 60%;
+  font-size: 65%;
   margin-left: 10px;
 }
 
+.incomeNum,
+.expenseNum,
 .creditScoreNum {
   display: block;
   margin-left: 10px;
   margin-top: 8px;
-
+  font-size: 120%;
 }
 
 .incomeBox {
   display: inline-block;
   background-color: white;
-  width: 160px;
-  height: 90px;
+  width: 30%;
+  height: 100px;
+  margin-right: 4%;
   border-radius: 3px;
   box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
-
 }
 
 .expenseBox {
   display: inline-block;
-  position: absolute;
-  width: 160px;
-  height: 90px;
-  margin-left: 80px;
+  width: 30%;
+  height: 100px;
   background-color: white;
   border-radius: 3px;
   box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
-
 }
 
 .creditScoreBox {
   display: inline-block;
-  position: absolute;
   background-color: white;
-  width: 160px;
-  height: 90px;
-  right: 0;
+  margin-left: 4%;
+  width: 30%;
+  height: 100px;
   border-radius: 3px;
   box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
-
-
 }
 
 .banner {
@@ -194,7 +140,6 @@ main {
   height: 100px;
   margin-bottom: 20px;
   box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
-
 }
 
 .welcomeText {
@@ -212,13 +157,8 @@ main {
   padding: 15px;
 }
 
-.creditIcon {
-  width: 40px;
-}
-
-.savingsIcon {
-  width: 40px;
-}
+.creditIcon,
+.savingsIcon,
 .checkingIcon {
   width: 40px;
 }
@@ -234,27 +174,13 @@ nav {
 
 .mainIcon {
   width: 80px;
+  height: 80px;
   margin-top: 20px;
 }
 
 .navButtons {
   position: relative;
   margin-top: 200px;
-}
-
-.profileIcon {
-  display: block;
-  padding: 10px 20px;
-}
-
-.dashIcon {
-  display: block;
-  padding: 10px 20px;
-}
-
-.transIcon {
-  display: block;
-  padding: 10px 20px;
 }
 
 .transactions {
@@ -268,12 +194,29 @@ nav {
 
 }
 
-.outflow {
-  left: 360px;
-  position: absolute;
+.profileIcon,
+.transIcon,
+.dashIcon {
+  display: block;
+  padding: 10px 19px 10px 10px;
+  border-left: 5px;
+  border-left-style: solid;
+  border-left-color: white;
 }
+
+.transIconClicked,
+.profileIconClicked,
+.dashIconClicked {
+  display: block;
+  padding: 10px 19px 10px 10px;
+  border-left: 5px;
+  border-left-style: solid;
+  border-left-color: #1CA3BA;
+}
+
+.outflow,
 .outflowTitle {
-  left: 350px;
+  left: 360px;
   position: absolute;
 }
 
@@ -281,19 +224,13 @@ hr {
   margin: 5px 0px 5px 0px;
 }
 
-.inflow {
-  left: 280px;
-  position: absolute;
-}
+.inflow,
 .inflowTitle {
   left: 280px;
   position: absolute;
 }
 
-.payee {
-  position: absolute;
-  left: 140px;
-}
+.payee,
 .payeeTitle {
   position: absolute;
   left: 140px;
@@ -314,10 +251,7 @@ h1 {
   padding-bottom: 30px;
 }
 
-.accountName {
-  display: inline;
-}
-
+.accountName,
 .accountType {
   display: inline;
 }
