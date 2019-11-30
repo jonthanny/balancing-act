@@ -4,12 +4,14 @@ var dashIcon = document.querySelector(".dashIcon")
 var transIcon = document.querySelector(".transIcon");
 var profileIcon = document.querySelector(".profileIcon");
 var dashPage = document.querySelector(".dashPage");
+var transPage = document.getElementById("transPage");
 
 closeIcon.addEventListener('click' , closeBanner);
 window.addEventListener('load' , highlightDashIcon);
 
 function closeBanner() {
-  banner.style.display = "none";
+  banner.style.height = "0px";
+  banner.style.opacity = "0";
 };
 
 dashIcon.addEventListener('click' , highlightDashIcon);
@@ -25,17 +27,23 @@ profileIcon.addEventListener('click' , highlightProfileIcon);
 // profileIcon.addEventListener('mouseout' , highlightProfileIcon);
 
 function highlightDashIcon() {
+  dashPage.style.opacity = "100%"
+  dashPage.style.zIndex = "2";
+  transPage.style.opacity = "0%";
+  transPage.style.zIndex = "-2";
   dashIcon.classList.add("dashIconClicked");
   transIcon.classList.remove("transIconClicked");
   profileIcon.classList.remove("profileIconClicked");
-  dashPage.style.display = "block";
 }
 
 function highlightTransIcon() {
+  transPage.style.opacity = "100%";
+  transPage.style.zIndex = "2";
+  dashPage.style.opacity = "0%";
+  dashPage.style.zIndex = "-2";
   transIcon.classList.add("transIconClicked");
   dashIcon.classList.remove("dashIconClicked");
   profileIcon.classList.remove("profileIconClicked");
-  dashPage.style.display = "none";
 }
 
 function highlightProfileIcon() {

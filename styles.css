@@ -16,6 +16,22 @@ body {
   width: 1360px;
 }
 
+#transPage {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  height: 700px;
+  width: 1360px;
+}
+
+button {
+  background: none;
+  border: none !important;
+  background-image: url("assets/images/close.svg");
+  outline: none;
+  cursor: pointer;
+}
+
 .dashSection {
   position: relative;
   display: inline-block;
@@ -140,6 +156,7 @@ body {
   height: 100px;
   margin-bottom: 20px;
   box-shadow: -2px 0px 7px 3px rgba(0,0,0,0.05);
+  transition: height .3s, opacity .2s;
 }
 
 .welcomeText {
@@ -151,10 +168,10 @@ body {
 
 .closeAction {
   width: 15px;
+  height: 15px;
   position: absolute;
-  top: 0;
   right: 0;
-  padding: 15px;
+  margin: 10px;
 }
 
 .creditIcon,
