@@ -5,6 +5,7 @@ var transIcon = document.querySelector(".transIcon");
 var profileIcon = document.querySelector(".profileIcon");
 var dashPage = document.querySelector(".dashPage");
 var transPage = document.getElementById("transPage");
+var profilePage = document.getElementById("profilePage")
 
 closeIcon.addEventListener('click' , closeBanner);
 window.addEventListener('load' , highlightDashIcon);
@@ -27,27 +28,37 @@ profileIcon.addEventListener('click' , highlightProfileIcon);
 // profileIcon.addEventListener('mouseout' , highlightProfileIcon);
 
 function highlightDashIcon() {
-  dashPage.style.opacity = "100%"
-  dashPage.style.zIndex = "2";
-  transPage.style.opacity = "0%";
-  transPage.style.zIndex = "-2";
   dashIcon.classList.add("dashIconClicked");
   transIcon.classList.remove("transIconClicked");
   profileIcon.classList.remove("profileIconClicked");
+  dashPage.style.opacity = "100%"
+  dashPage.style.zIndex = "1";
+  transPage.style.opacity = "0%";
+  transPage.style.zIndex = "0";
+  profilePage.style.opacity = "0%";
+  profilePage.style.zIndex = "0";
 }
 
 function highlightTransIcon() {
-  transPage.style.opacity = "100%";
-  transPage.style.zIndex = "2";
-  dashPage.style.opacity = "0%";
-  dashPage.style.zIndex = "-2";
   transIcon.classList.add("transIconClicked");
   dashIcon.classList.remove("dashIconClicked");
   profileIcon.classList.remove("profileIconClicked");
+  transPage.style.opacity = "100%";
+  transPage.style.zIndex = "1";
+  dashPage.style.opacity = "0%";
+  dashPage.style.zIndex = "0";
+  profilePage.style.opacity = "0%";
+  profilePage.style.zIndex = "0";
 }
 
 function highlightProfileIcon() {
   profileIcon.classList.add("profileIconClicked");
   dashIcon.classList.remove("dashIconClicked");
   transIcon.classList.remove("transIconClicked");
+  profilePage.style.opacity = "100%";
+  profilePage.style.zIndex = "1";
+  dashPage.style.opacity = "0%";
+  dashPage.style.zIndex = "0";
+  transPage.style.opacity = "0%";
+  transPage.style.zIndex = "0";
 }
